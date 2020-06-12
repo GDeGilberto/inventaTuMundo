@@ -48,16 +48,24 @@ h1,h2,h3,p,ul{
 }
 
 article{
-	margin-top: 150px;
+	margin-top: 120px;
 	background-color: rgb(255,255,255);
 	border-radius: 3px;
 	box-shadow: 0 4px 9px 0 rgba(67, 65, 79, 0.1);
 	transition: all 0.3s;
 }
+span{
+	margin-right: 10px;
+}
 button > a{
 	text-decoration: none;
 }
-
+.etiqueta{
+	font-weight: bold;
+	color: var(--color-robot);
+	padding: 0 20px 16px 20px;
+	width: ;
+}
 .banner{
 	width: 100%;
 }
@@ -143,12 +151,18 @@ button > a{
 	padding: 20px 10px;
 	color: var(--color-4);
 }
-
+.no-decoracion{
+	list-style: none;
+}
 .block{
 	display: inline-block;
 	border-radius: 5px;
 	margin: 0 0 20px 10px;
 	overflow: hidden;
+}
+.block-2{
+	width: 50vw;
+	display: inline;
 }
 .block-4{
 	color: var(--color-4);
@@ -158,9 +172,6 @@ button > a{
 	text-align: center;
 	text-decoration: none;
 }
-
-
-
 .block-8{
 	background-color: var(--color-1);
 	color: var(--color-3);
