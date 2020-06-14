@@ -30,7 +30,7 @@ h2{
 	font-size: 24px;
 	text-transform: uppercase;
 	text-align: center;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 h3{
 	font-size: 22px;
@@ -62,9 +62,13 @@ p{
 }
 a{
 	text-decoration: none;
+	color: black;
 }
 header{
 	margin-top: 70px;
+}
+footer li{
+	list-style: none;
 }
 /*************************************************************************************/
 #navegacion{
@@ -83,8 +87,7 @@ header{
     margin-left: 0.6em;
 }
 .boton-menu {
-    background-color: transparent;
-    border: 1px solid #fff;
+	background-color: transparent;
     display: block;
 	float: right;
 	font-size: 44px;
@@ -170,57 +173,86 @@ ul.nav-items li a span {
 	display:flex;
 	align-items: center;
 }
-/*
-
-article{
-	margin-top: 120px;
-	background-color: rgb(255,255,255);
-	border-radius: 3px;
-	box-shadow: 0 4px 9px 0 rgba(67, 65, 79, 0.1);
-	transition: all 0.3s;
+.productos-y-servicios{
+	width: 100%;
 }
-.etiqueta{
-	font-weight: bold;
-	color: var(--color-robot);
-	padding: 0 20px 16px 20px;
-}
-
-
-.subtitle{
-	font-size: 1.9em;
-	font-weight: bold;
-	text-align: center;
-	padding: 20px 10px;
-	color: var(--color-4);
+.contenido{
+	width: 100%;
 }
 .block{
-	display: inline-block;
+	width: 100%;
 	border-radius: 5px;
-	margin: 0 0 20px 10px;
-	overflow: hidden;
+	margin-bottom: 10px;
+	padding: 10px;
 }
-.block-2{
-	width: 45vw; 
-	padding: 0 0 0 20px;
-	display: inline-block;
-	
+.image-block-medium{
+	width: 55%;
 }
-.block-4{
-	color: var(--color-4);
-	font-size: 1.1em;
-	width: 95%;
-	padding: 10px 0 4px 0;
-	text-align: center;
-	text-decoration: none;
+.productos-y-servicios .block:nth-child(1){
+	background-color: var(--color-informatic);
+	grid-area: a;
 }
-.block-8{
-	background-color: var(--color-1);
+.productos-y-servicios .block:nth-child(2){
+	background-color: var(--color-electronic);
+	grid-area: b;
+}
+.productos-y-servicios .block:nth-child(3){
+	background-color: var(--color-desing);
+	grid-area: c;
+}
+.productos-y-servicios .block:nth-child(4){
+	background-color: var(--color-robot);
+	grid-area: d;
+}
+.contenido-de-interes .block:nth-child(1){
+	grid-area: a;
+}
+.contenido-de-interes .block:nth-child(2){
+	grid-area: b;
+}
+.contenido-de-interes .block:nth-child(3){
+	grid-area: c;
+}
+.contenido-de-interes .block:nth-child(4){
+	grid-area: d;
+}
+.contenido-de-interes .block:nth-child(5){
+	grid-area: e;
+}
+.contenido-de-interes .block:nth-child(6){
+	grid-area: f;
+}
+.contenido-de-interes .block:nth-child(7){
+	grid-area: g;
+}
+.contenido-de-interes .block:nth-child(8){
+	grid-area: h;
+}
+
+.contenido-de-interes .block{
+	line-height: 0.1em;
+	background-color: var(--color-2);
+}
+.contenido-de-interes img{
+	width: 100%;
+	height: 200px;
+	margin-bottom: 20px;
+}
+.contenido-de-interes h3{
+	font-size: 17px;
+	margin-bottom: 25px;
+}
+.block button{
+	font-size: 1.2em;
+	padding: 4px 8px;
+	display: block;
+	margin: 0 0 0 auto;
+	border-radius: 5px;
+	background-color: var(--color-electronic);
+	border: none; 
+}
+.contenido-de-interes a{
 	color: var(--color-3);
-	width: 46%;
-	height: 13em;
-	padding: 15px 8px 10px 8px;
-	text-align: center;	
-	font-size: .9em;
 }
 
 .container-footer{
@@ -238,7 +270,30 @@ article{
 	padding: 10px;
 	margin-left: 40px;
 }
+.nav-social-networks li{
+	display: inline-block;
+}
+/*
+article{
+	margin-top: 120px;
+	background-color: rgb(255,255,255);
+	border-radius: 3px;
+	box-shadow: 0 4px 9px 0 rgba(67, 65, 79, 0.1);
+	transition: all 0.3s;
+}
+.etiqueta{
+	font-weight: bold;
+	color: var(--color-robot);
+	padding: 0 20px 16px 20px;
+}
 
+.subtitle{
+	font-size: 1.9em;
+	font-weight: bold;
+	text-align: center;
+	padding: 20px 10px;
+	color: var(--color-4);
+}
 
 .header{
 	display: block;
@@ -340,30 +395,8 @@ article{
 	padding: 5px 10px;
 	text-align: center;
 }
-
 .list{
 	list-style: none;
-}
-
-.image-block-medium{
-	width: 45%;
-}
-
-.nav-social-networks li{
-	display: inline-block;
-}
-
-.block-4:nth-child(2){
-	background-color: var(--color-informatic);
-}
-.block-4:nth-child(3){
-	background-color: var(--color-electronic);
-}
-.block-4:nth-child(4){
-	background-color: var(--color-desing);
-}
-.block-4:nth-child(5){
-	background-color: var(--color-robot);
 }
 .group-images:first-child{
 	width: 100vw;
@@ -390,31 +423,43 @@ article{
 		font-size: 3.8em;
 		justify-content: center;
 	}
+	.contenido{
+		display: grid;
+		align-items: flex-end;
+		grid-template-columns: repeat(8, 1fr);
+		grid-gap: 10px 15px;
+		grid-auto-rows: auto;
+		grid-template-areas: 
+		"a a a a b b b b"
+		"c c c c d d d d";
+		align-items: stretch;
+	}
+	.contenido-de-interes .contenido{
+		grid-template-areas: 
+		"a a a a b b b b"
+		"c c c c d d d d"
+		"e e e e f f f f"
+		"g g g g h h h h";
+	}
+	/*
+	.contenido-de-interes .block{
+		display: flex;
+		flex-flow: row wrap;
+	}
+	
 	/*
 	article{
 		margin-top: 110px;
-	}
-	.block-2{
-		width: auto
 	}
 	.menu{
 		width: 30vw;
 		margin-left: -60%;
 	}
 
-
 	.foto-perfil{
 		width: 35%;
 		margin: 40px;
 	}
-	.block-4{
-		font-size: 1.2em;
-		width: 48%;
-	}
-	.block-8{
-		width: 23%;
-		height: 14.5em;
-	}*/
 }
 
 /* Tablets en horizontal y esctritorios normales */
@@ -424,6 +469,15 @@ article{
 	}
 	.nav-items {
 		width: 40%;
+	}
+	.productos-y-servicios .contenido{
+		grid-template-areas: 
+		"a a b b c c d d";
+	}
+	.contenido-de-interes .contenido{
+		grid-template-areas:
+		"a a b b c c d d"
+		"e e f f g g h h";
 	}
 }
 
@@ -446,10 +500,10 @@ article{
 	.nav-items a{
 		border: none;
 	}
-
 	.nav-items a:hover{
 		color: var(--color-3);
 	}
+}
 	/**********************************************/
 	.beaner{
 		height: 550px;
@@ -459,17 +513,6 @@ article{
 	.subtitle{
 		font-size: 2.2em;
 	}
-
-	.block-4{
-		font-size: 1.2em;
-		width: 24%;
-		padding: 8px 0 4px 0;
-	}
-	.block-8{
-		width: 11.45%;
-		height: 14em;
-	}
-
 	.container-footer{
 		display: flex;
 	}
@@ -488,28 +531,6 @@ article{
 		float: left;
 		padding-top: 20px;
 	}
-
-	.block-2{
-		width: 48%;
-		padding: 10px 20px;
-		
-	}
-	.image-block-2{
-		width: 100%;
-		height: 40vh;
-	}
-	.block-3{
-		width: 31.95%;
-		padding: 10px 0;
-		background-color: var(--color-3);
-		text-align: center;
-		font-size: 1.2em;
-	}
-	.image-block-3{
-		width: 100%;
-		height: 250px;
-	}
-
 	.group-images{
 		width: 24%;
 		float: left;
