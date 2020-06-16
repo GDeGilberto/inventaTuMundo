@@ -81,7 +81,7 @@ footer li{
 	list-style: none;
 }
 /**************************************************************/
-.navegacion{
+#navegacion{
     box-sizing: border-box;
 	width: 100vw;
 	height: 60px;
@@ -113,7 +113,7 @@ footer li{
 .close { 
 	display:none;
 }   
-.logo img {
+#logo img {
     height: 60px;
     margin-left: 0.6em;
 }
@@ -133,18 +133,18 @@ ul.nav-items li a span {
 ul.nav-items li:first-child a {
     border-top: 2px solid transparent;
 }
-.navegacion:target .nav-items {
+#navegacion:target .nav-items {
     background: #ffffff none repeat scroll 0 0; 
 	height: 15.8em;
 	position: absolute;
 	top: 80px;
     transition: height 0.4s ease-in-out 0s, background-color 0.9s ease 0s;
 } 
-.navegacion:target .open {
+#navegacion:target .open {
 	display: none;
 }
 
-.navegacion:target .close {
+#navegacion:target .close {
 	display: block;
 }
 #item1 span {
@@ -369,7 +369,7 @@ ul.nav-items li:first-child a {
 	.boton-menu{
 		display: none;
 	}
-	.navegacion{
+	#navegacion{
 		position: fixed;
 	}
 	.nav-items{
