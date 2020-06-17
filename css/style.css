@@ -80,8 +80,15 @@ article img{
 header:not(article){
 	margin: -20px -20px 0 -20px;
 }
+footer{
+	text-align: center;
+}
 footer li{
 	list-style: none;
+	text-align: left;
+}
+footer a{
+	color: var(--color-3);
 }
 /**************************************************************/
 #navegacion{
