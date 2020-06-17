@@ -74,6 +74,9 @@ article{
 	transition: all 0.3s;
 	padding: 20px;
 }
+article img{
+	border-radius: 5px;
+}
 header:not(article){
 	margin: -20px -20px 0 -20px;
 }
