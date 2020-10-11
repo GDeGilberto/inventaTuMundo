@@ -55,6 +55,9 @@ ul,ol{
 	left: 42px;
 	width: calc(100% - 42px);
 }
+li{
+	list-style: none;
+}
 p{
 	font-size: 18px;
 	margin-bottom: 20px;
@@ -82,14 +85,19 @@ header:not(article){
 }
 footer{
 	text-align: center;
+	
 }
-footer li{
+footer ul{
 	list-style: none;
-	text-align: left;
+	
 }
 footer a{
 	color: var(--color-3);
 }
+.footer-right{
+	margin: 0;
+}
+
 /**************************************************************/
 #navegacion{
     box-sizing: border-box;
@@ -174,20 +182,20 @@ ul.nav-items li:first-child a {
 }
 /**************************************************************/
 .beaner{
-	height: 35vh;
 	width: 100vw;
 	top: 80px;
 	position: relative;
-	padding: 5vh 20px 0 20px;
-	margin-left: -20px;
 	margin-bottom: 96px;
-	background-image: url(/img/banner-movil.png);
-	background-repeat: no-repeat;
+}
+header{
 	color: var(--color-4);
 	font-size: 1.2em;
 	letter-spacing: .1em;
 	display:inline-block;
 	text-align: center;
+}
+header > h1{
+	padding: 0 40px;
 }
 .beaner-articulo{
 	width: 100%;
@@ -212,7 +220,6 @@ ul.nav-items li:first-child a {
 	"h h h h h h h h";
 	align-items: stretch;
 	align-items: flex-end;
-
 }
 .block{
 	border-radius: 5px;
@@ -314,6 +321,14 @@ ul.nav-items li:first-child a {
 }
 .productos-y-servicios .block:nth-child(4){
 	background-color: var(--color-robot);
+}
+.block-2 > img{
+	width: 80%;
+	height: 200px;
+	float: left;
+}
+.aside-tags{	
+	display: inline-block;
 }
 
 /* Móviles en horizontal o tablet en vertical */
